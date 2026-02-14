@@ -3,112 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
     <title>Tahák k HTML</title>
 </head>
 <body>
-    <a name="top"></a>
+    <a name="#top"></a>
     <h1>Tahák k HTML</h1>
-
-    <p>
-        Zde si můžete prohlédnout všechny tagy.<br>
-        Vyhledávání na stránce:
-        <a href="#List">Seznamy</a> |
-        <a href="#Formate">Formátování textu</a> |
-        <a href="#Links">Odkazy</a> |
-        <a href="#Image">Obrázky</a>
+    <p>Zde si můžete prohlédnout základní HTML tagy. Poznámka: <b>Informace budou postupně doplňovány.</b><br>
+        Tahák k CSS: <a href="css.html">CSS tahák</a><br>
+        Vyhledávání na stránce: <a href="#List">Seznamy</a>
+        ┃ <a href="#Formate">Formátování textu</a>
+        ┃ <a href="#Links">Odkazy</a>
+        ┃ <a href="#Image">Obrázky</a>
     </p>
-
     <hr>
 
     <h3>Meta tagy:</h3>
-    <p>meta charset="UTF-8" – nastavuje správné kódování znaků.</p>
-    <p>meta name="viewport" – přizpůsobení stránky mobilním zařízením.</p>
-    <p>meta name="description" – krátký popis stránky pro vyhledávače.</p>
-    <p><meta http-equiv="X-UA-Compatible" content="IE=7"></p>
-
+    <p>meta charset="UTF-8" - nastavuje kódování, aby se všechny znaky zobrazovaly správně</p>
+    <p>meta name="viewport" content="width=device-width, initial-scale=1.0" - přizpůsobení webu mobilním zařízením</p>
+    <p>meta name="description" content="Krátký popis webu" - popis stránky pro vyhledávače</p>
+    <p>meta name="keywords" content="Klíčová slova webu" - klíčová slova pro SEO (dnes se téměř nepoužívá)</p>
+    <p>meta http-equiv="X-UA-Compatible" content="IE=7" - nastavuje režim zobrazení prohlížeče</p>
     <hr>
 
     <h3>Nadpisy</h3>
-    <p>Nadpisy h1–h6. Čím vyšší číslo, tím menší nadpis.</p>
-    <h3>Příklad nadpisu h3</h3>
-
+    <p>Nadpisy h: Existují h1, h2, h3, h4, h5, h6. Čím vyšší číslo, tím menší nadpis.</p>
+    <p>Příklad h3:</p> <h3>Ahoj!</h3>
     <hr>
 
     <a name="List"></a>
     <h3>Seznamy</h3>
+    <p><b>Poznámka! Tag li se používá téměř všude, protože znamená položku seznamu (LIST).</b></p>
 
-    <p>ul + li – nečíslovaný seznam:</p>
+    <p>Tagy UL, LI: vytvářejí nečíslovaný seznam.</p>
     <ul>
         <li>Příklad</li>
         <li>Příklad</li>
     </ul>
 
-    <p>ol + li – číslovaný seznam:</p>
+    <p>Tagy OL, LI: vytvářejí číslovaný seznam.</p>
     <ol>
         <li>Příklad</li>
         <li>Příklad</li>
     </ol>
 
+    <p>Tagy DT, DD, DL - vytvářejí popisný seznam.</p>
+    <p>DT: Termín</p>
+    <p>DD: Popis</p>
 
-
-    <p>dl, dt, dd – seznam pojmů a popisů:</p>
+    <p><b>Příklad:</b></p>
     <dl>
         <dt>IT škola</dt>
         <dd>Nejlepší škola na světě!</dd>
     </dl>
-    <p>Tagy dt, dd a dl plní podobnou funkci jako li (položka seznamu).
-    dt – termín (název pojmu)
-    dd – popis (vysvětlení pojmu)</p>
 
+    <p>Vnořený seznam:</p>
+    <ol>
+        <li>Úkol</li>
+        <li>
+            Nakrmit:
+            <ul>
+                <li>Kočku</li>
+                <li>Psa</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h4>Atributy seznamu OL:</h4>
+    <ol>
+        <li>reversed</li>
+        <li>start</li>
+        <li>type</li>
+    </ol>
+
+    <p>reversed - zobrazí seznam v opačném pořadí.</p>
+    <p>start - nastavuje počáteční hodnotu číslování.</p>
+    <p>type:</p>
+    <ul>
+        <li>1 — výchozí desetinné číslování.</li>
+        <li>A — velká písmena.</li>
+        <li>a — malá písmena.</li>
+        <li>I — římské číslice velké.</li>
+        <li>i — římské číslice malé.</li>
+    </ul>
     <hr>
 
     <a name="Formate"></a>
-    <h3>Formátování textu</h3>
+    <h3>Formátování textu:</h3>
 
-    <p><strong>strong</strong> – důležitý text</p>
-    <p><b>b</b> – tučný text</p>
-    <p><em>em</em> – zvýraznění</p>
-    <p><i>i</i> – kurzíva</p>
-    <p>br – zalomení řádku</p>
-    <p>hr – vodorovná čára</p>
-    <p>sup – horní index <sup>2</sup></p>
-    <p>sub – dolní index <sub>2</sub></p>
-    <p><ins>ins</ins> – podtržení</p>
-    <p><del>del</del> – přeškrtnutí</p>
-    <p><code>code</code> – úryvek kódu</p>
-    <p>blockquote: Slouží k označení dlouhých citací.</p>
-    <p>q: Slouží pro krátké citace a automaticky přidává uvozovky.</p>
-    <p>cite: Slouží k označení zdroje citace.</p>
-    <p>var: Označuje názvy proměnných a zobrazuje je kurzívou.</p>
-    <p>link: Používá se k rozšíření možností aktuálního dokumentu (např. připojení CSS nebo jiných souborů k projektu).</p>
-
-
+    <p>strong: označuje <strong>důležitý</strong> text.</p>
+    <p>b: <b>zvýrazní text</b> bez změny významu.</p>
+    <p>em: označuje text s <em>důrazem</em>.</p>
+    <p>i: text odlišený od okolního textu.</p>
+    <p>br: zalomení řádku.</p>
+    <p>hr: vodorovná oddělovací čára.</p>
+    <p>blockquote: pro delší citace.</p>
+    <p>q: krátká citace (přidá uvozovky).</p>
+    <p>cite: označení <cite>zdroje</cite> citace.</p>
+    <p>sup: horní index <sup>2</sup>.</p>
+    <p>sub: dolní index <sub>2</sub>.</p>
+    <p>ins: <ins>podtržení</ins> textu.</p>
+    <p>del: <del>přeškrtnutí</del> textu.</p>
+    <p>code: označení části programového kódu.</p>
+    <p>var: označení proměnných.</p>
+    <p>link: připojení externích souborů (např. CSS).</p>
     <hr>
 
     <a name="Links"></a>
     <h2>Odkazy</h2>
 
-    <p>Tag <b>a</b> slouží k vytváření odkazů.</p>
-    <p>Absolutní odkaz – https://example.com</p>
-    <p>Relativní odkaz – přechod v rámci webu.</p>
-    <p>target="_blank" – otevře odkaz v nové kartě.</p>
-    <p>mailto: – odkaz na e-mail.</p>
+    <h3>Přechod na jiný web:</h3>
+    <p>Používá se tag <b>a</b>.</p>
+    <p>Odkazy jsou relativní a absolutní.</p>
 
-    <p><a href="#top">Zpět nahoru</a></p>
+    <ul>
+        <li>Absolutní odkaz - vede na jiný web (https://example.com)</li>
+        <li>Relativní odkaz - vede na jinou stránku stejného webu</li>
+    </ul>
+
+    <p>Otevření odkazu v nové záložce: target="_blank"</p>
+
+    <p>Odkaz na e-mail: mailto:example@gmail.com</p>
+
+    <h3>Kotvy (anchor odkazy):</h3>
+    <p>Umožňují přesun na konkrétní část stránky.</p>
+
+    <a href="#top">Přejít na začátek</a>
 
     <hr>
 
     <a name="Image"></a>
     <h2>Obrázky</h2>
-    <p><img src="odkaz" alt="Text, pokud se obrázek nezobrazí"></p>
 
-    <p>Tag img slouží k vložení obrázku:</p>
-    <code>img src="obrazek.jpg" alt="Popis obrázku"</code>
+    <p>Pro vložení obrázku slouží tag <b>img src</b>.</p>
+    <code>img src="obrazek.jpg" alt="Text pokud se obrázek nezobrazí"</code>
 
-    <p>width – šířka obrázku</p>
-    <p>height – výška obrázku</p>
-    <h2>Text vlevo / vpravo od obrázku</h2>
-    <p>K tomu slouží atribut align, který může mít hodnotu left nebo right. Zapisuje se také do tagu img.</p>
+    <p>Změna velikosti:</p>
+    <p>height - výška</p>
+    <p>width - šířka</p>
 
 </body>
 </html>
