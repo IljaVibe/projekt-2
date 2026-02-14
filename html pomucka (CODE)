@@ -10,8 +10,7 @@
     <h1>Tahák k HTML</h1>
 
     <p>
-        Zde si můžete prohlédnout všechny tagy. 
-        <b>Poznámka: Informace budou přidávány postupně.</b><br>
+        Zde si můžete prohlédnout všechny tagy.<br>
         Vyhledávání na stránce:
         <a href="#List">Seznamy</a> |
         <a href="#Formate">Formátování textu</a> |
@@ -25,7 +24,7 @@
     <p>meta charset="UTF-8" – nastavuje správné kódování znaků.</p>
     <p>meta name="viewport" – přizpůsobení stránky mobilním zařízením.</p>
     <p>meta name="description" – krátký popis stránky pro vyhledávače.</p>
-    <p>meta name="keywords" – klíčová slova pro SEO.</p>
+    <p><meta http-equiv="X-UA-Compatible" content="IE=7"></p>
 
     <hr>
 
@@ -50,11 +49,16 @@
         <li>Příklad</li>
     </ol>
 
+
+
     <p>dl, dt, dd – seznam pojmů a popisů:</p>
     <dl>
         <dt>IT škola</dt>
         <dd>Nejlepší škola na světě!</dd>
     </dl>
+    <p>Tagy dt, dd a dl plní podobnou funkci jako li (položka seznamu).
+    dt – termín (název pojmu)
+    dd – popis (vysvětlení pojmu)</p>
 
     <hr>
 
@@ -72,6 +76,12 @@
     <p><ins>ins</ins> – podtržení</p>
     <p><del>del</del> – přeškrtnutí</p>
     <p><code>code</code> – úryvek kódu</p>
+    <p>blockquote: Slouží k označení dlouhých citací.</p>
+    <p>q: Slouží pro krátké citace a automaticky přidává uvozovky.</p>
+    <p>cite: Slouží k označení zdroje citace.</p>
+    <p>var: Označuje názvy proměnných a zobrazuje je kurzívou.</p>
+    <p>link: Používá se k rozšíření možností aktuálního dokumentu (např. připojení CSS nebo jiných souborů k projektu).</p>
+
 
     <hr>
 
@@ -90,12 +100,15 @@
 
     <a name="Image"></a>
     <h2>Obrázky</h2>
+    <p><img src="odkaz" alt="Text, pokud se obrázek nezobrazí"></p>
 
     <p>Tag img slouží k vložení obrázku:</p>
     <code>img src="obrazek.jpg" alt="Popis obrázku"</code>
 
     <p>width – šířka obrázku</p>
     <p>height – výška obrázku</p>
+    <h2>Text vlevo / vpravo od obrázku</h2>
+    <p>K tomu slouží atribut align, který může mít hodnotu left nebo right. Zapisuje se také do tagu img.</p>
 
 </body>
 </html>
