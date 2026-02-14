@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahák k HTML</title>
+</head>
+<body>
+    <a name="top"></a>
+    <h1>Tahák k HTML</h1>
+
+    <p>
+        Zde si můžete prohlédnout všechny tagy. 
+        <b>Poznámka: Informace budou přidávány postupně.</b><br>
+        Vyhledávání na stránce:
+        <a href="#List">Seznamy</a> |
+        <a href="#Formate">Formátování textu</a> |
+        <a href="#Links">Odkazy</a> |
+        <a href="#Image">Obrázky</a>
+    </p>
+
+    <hr>
+
+    <h3>Meta tagy:</h3>
+    <p>meta charset="UTF-8" – nastavuje správné kódování znaků.</p>
+    <p>meta name="viewport" – přizpůsobení stránky mobilním zařízením.</p>
+    <p>meta name="description" – krátký popis stránky pro vyhledávače.</p>
+    <p>meta name="keywords" – klíčová slova pro SEO.</p>
+
+    <hr>
+
+    <h3>Nadpisy</h3>
+    <p>Nadpisy h1–h6. Čím vyšší číslo, tím menší nadpis.</p>
+    <h3>Příklad nadpisu h3</h3>
+
+    <hr>
+
+    <a name="List"></a>
+    <h3>Seznamy</h3>
+
+    <p>ul + li – nečíslovaný seznam:</p>
+    <ul>
+        <li>Příklad</li>
+        <li>Příklad</li>
+    </ul>
+
+    <p>ol + li – číslovaný seznam:</p>
+    <ol>
+        <li>Příklad</li>
+        <li>Příklad</li>
+    </ol>
+
+    <p>dl, dt, dd – seznam pojmů a popisů:</p>
+    <dl>
+        <dt>IT škola</dt>
+        <dd>Nejlepší škola na světě!</dd>
+    </dl>
+
+    <hr>
+
+    <a name="Formate"></a>
+    <h3>Formátování textu</h3>
+
+    <p><strong>strong</strong> – důležitý text</p>
+    <p><b>b</b> – tučný text</p>
+    <p><em>em</em> – zvýraznění</p>
+    <p><i>i</i> – kurzíva</p>
+    <p>br – zalomení řádku</p>
+    <p>hr – vodorovná čára</p>
+    <p>sup – horní index <sup>2</sup></p>
+    <p>sub – dolní index <sub>2</sub></p>
+    <p><ins>ins</ins> – podtržení</p>
+    <p><del>del</del> – přeškrtnutí</p>
+    <p><code>code</code> – úryvek kódu</p>
+
+    <hr>
+
+    <a name="Links"></a>
+    <h2>Odkazy</h2>
+
+    <p>Tag <b>a</b> slouží k vytváření odkazů.</p>
+    <p>Absolutní odkaz – https://example.com</p>
+    <p>Relativní odkaz – přechod v rámci webu.</p>
+    <p>target="_blank" – otevře odkaz v nové kartě.</p>
+    <p>mailto: – odkaz na e-mail.</p>
+
+    <p><a href="#top">Zpět nahoru</a></p>
+
+    <hr>
+
+    <a name="Image"></a>
+    <h2>Obrázky</h2>
+
+    <p>Tag img slouží k vložení obrázku:</p>
+    <code>img src="obrazek.jpg" alt="Popis obrázku"</code>
+
+    <p>width – šířka obrázku</p>
+    <p>height – výška obrázku</p>
+
+</body>
+</html>
